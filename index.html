@@ -6,10 +6,9 @@
   <link rel="main.css" href="stylesheet">
 </head>
 <body>
-  <div id="app"> 
-    <ol>
-      <li v-for="item in list">{{item}}</li>
-    </ol>
+  <div id="app">
+    <p>{{message}}</p>
+    <input v-model="message">
   </div>  
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="main.js"></script>
