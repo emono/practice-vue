@@ -1,8 +1,13 @@
+var state = { count : 0 }
 var app = new Vue(
   {
     el: '#app',
     data: {
-      show: true
+      message: {
+        value: "Hello Vue.js!"
+      },
+      list: ["りんご", "ばなな", "いちご"],
+      num: 1
     }
   }
 )
