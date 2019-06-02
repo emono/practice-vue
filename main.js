@@ -3,11 +3,12 @@ var app = new Vue(
   {
     el: '#app',
     data: {
-      message: {
-        value: "Hello Vue.js!"
+        count: 0
       },
-      list: ["りんご", "ばなな", "いちご"],
-      num: 1
+    methods: {
+      increment: function () {
+        this.count += 1000
+      }
     }
   }
 )
