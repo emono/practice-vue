@@ -7,8 +7,9 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ count }}回クリックしたよ</p>
-    <button v-on:click="increment">カウントを増やす</button>
+    <div v-if="loaded" key="content-visible">typeはA</div>
+    <!-- <div v-else-if="type==='B'">typeはB</div> -->
+    <div v-else key="content-visible2" >typeはB</div>
   </div>  
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="main.js"></script>
