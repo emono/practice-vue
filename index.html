@@ -7,9 +7,12 @@
 </head>
 <body>
   <div id="app">
-    <div v-if="loaded" key="content-visible">typeはA</div>
-    <!-- <div v-else-if="type==='B'">typeはB</div> -->
-    <div v-else key="content-visible2" >typeはB</div>
+    <ul>
+      <li v-for="(item, index) in list" v-bind:key="item.id">
+        ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
+        <button v-on:click="doAttack(index)">攻撃する</button>
+      </li>
+    </ul>
   </div>  
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="main.js"></script>
